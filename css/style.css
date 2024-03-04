@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+}
+@font-face {
+    font-family: "ggsans-Medium";
+    src: url("fonts/ggsans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ggsans-Bold";
+    src: url("../fonts/ggsans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ggsans-Normal";
+    src: url("../fonts/ggsans-Normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ggsans-Semibold";
+    src: url("../fonts/ggsans-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ABCGintoNord-Bold";
+    src: url("../fonts/ABCGintoNord-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: rgb(58, 58, 255);
+}
+header div.left {
+    width: 12%;
+}
+header div.left a {
+}
+header div.left a img.logo-image {
+    width: 130px;
+}
+header nav.middle {
+    width: 62%;
+}
+header nav.middle ul {
+    display: flex;
+}
+header nav.middle ul li {
+    list-style: none;
+    margin-right: 35px;
+}
+header nav.middle ul li:last-child {
+    margin-right: 0;
+}
+header nav.middle ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "ggsans-Semibold";
+    font-size: 17px;
+}
+header nav.middle ul li a:hover {
+    text-decoration: underline;
+}
+header div.right {
+}
+header div.right button.login-button {
+    background-color: white;
+    color: black;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    font-family: "ggsans-Semibold";
+    border-radius: 20px;
+    cursor: pointer;
+}
+header div.right button.login-button:hover {
+    color: rgb(88, 101, 242);
+}
+#spotlight {
+    background-color: rgb(58, 58, 255);
+    height: 553px;
+    background-image: url(../images/spotlight-image2.svg),
+        url(../images/spotlight-image1.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 707px, 600px;
+    background-position: top 193px left -340px, top 202px right -218px;
+    text-align: center;
+}
+#spotlight section.container {
+    padding: 105px 120px 0px 127px;
+}
+#spotlight section.container div.spotlight-content {
+}
+#spotlight section.container div.spotlight-content h3.spotlight-title {
+    font-size: 58px;
+    color: rgb(255, 255, 255);
+    font-family: "ABCGintoNord-Bold";
+    margin-bottom: 26px;
+}
+#spotlight section.container div.spotlight-content p.spotlight-description {
+    max-width: 780px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 32px;
+    font-family: "ggsans-Normal";
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+#spotlight section.container div.spotlight-button-container {
+    margin-top: 45px;
+}
+#spotlight section.container div.spotlight-button-container a.download-button {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: "ggsans-Semibold";
+    padding: 17px 30px 17px 32px;
+    border-radius: 30px;
+}
+#spotlight section.container div.spotlight-button-container a.download-button img.download-icon {
+    width: 25px;
+    height: 28px;
+    object-position: 2px 6px;
+}
+#spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+    margin-left: 13px;
+    font-size: 20px;
+}
+#spotlight section.container div.spotlight-button-container a.talk-button {
+    background-color: rgb(35, 39, 42);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "ggsans-Semibold";
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+}
+#services {
+}
+#services section.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 60px 140px 75px;
+}
+#services section.container div.image-container {
+    width: 48%;
+}
+#services section.container div.image-container img {
+    width: 100%;
+    display: block;
+}
+#services section.container div.content {
+    width: 44%;
+}
+#services section.container div.content h3.title {
+    color: black;
+    font-size: 45px;
+    width: 68%;
+    font-family: "ggsans-Bold";
+    margin-top: 49px;
+    line-height: 45px;
+    margin-bottom: 25px;
+}
+#services section.container div.content p.description {
+    color: rgb(35, 39, 42);
+    font-size: 20px;
+    font-family: "ggsans-Normal";
+    width: 69%;
+}
+#services section.middle-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(246, 246, 246);
+    padding: 115px 190px 124px 75px;
+}
+#services section.middle-container div.content {
+    width: 44%;
+}
+#services section.middle-container div.content h3.title {
+    width: 75%;
+    color: black;
+    font-size: 45px;
+    font-family: "ggsans-Bold";
+    margin-top: 70px;
+    line-height: 45px;
+    margin-bottom: 25px;
+}
+#services section.middle-container div.content p.description {
+    width: 81%;
+    color: rgb(148, 146, 146);
+    font-family: "ggsans-Normal";
+    font-size: 20px;
+}
+#services section.middle-container div.image-container {
+    width: 55%;
+}
+#services section.middle-container div.image-container img {
+    width: 100%;
+    display: block;
+}
+footer {
+    background-color: rgb(35, 39, 42);
+    padding: 75px 0px 75px 85px;
+}
+footer div.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+footer div.footer-top-container {
+}
+footer div.footer-top-container div.side-container {
+    width: 26%;
+}
+footer div.footer-top-container div.side-container form.form-field {
+    margin-bottom: 45px;
+    margin-top: 17px;
+}
+footer div.footer-top-container div.side-container form.form-field select.select-language {
+    background-color: rgb(35, 39, 42);
+    border: none;
+    color: white;
+    appearance: none;
+    padding: 10px 30px;
+    background-image: url(../images/flag.svg), url(../images/down-arrow.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 22px 19px;
+    font-size: 14px;
+    background-position: left, right;
+    font-family: "ggsans-Normal";
+}
+footer div.footer-top-container div.side-container form.form-field select.select-language:focus {
+    outline: none;
+}
+footer div.footer-top-container div.side-container form.form-field select.select-language option.select-option {
+}
+footer div.footer-top-container div.side-container div.logo-container {
+}
+footer div.footer-top-container div.side-container div.logo-container ul.logo-list {
+    display: flex;
+    padding: 0px;
+}
+footer div.footer-top-container div.side-container div.logo-container ul.logo-list li {
+    list-style: none;
+    margin-right: 27px;
+}
+footer div.footer-top-container div.side-container div.logo-container ul.logo-list li:last-child {
+    margin-right: 0px;
+}
+footer div.footer-top-container div.side-container div.logo-container ul.logo-list li a {
+}
+footer div.footer-top-container div.side-container div.logo-container ul.logo-list li a img {
+    width: 24px;
+}
+footer div.footer-top-container div.right-side-container {
+    display: flex;
+    width: 66%;
+}
+footer div.footer-top-container div.right-side-container div.list-container {
+}
+footer div.footer-top-container div.right-side-container div.list-container:first-child {
+    margin-right: 35px;
+}
+footer div.footer-top-container div.right-side-container div.list-container:nth-child(2) {
+    margin-right: 110px;
+}
+footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+    margin-right: 15px;
+}
+footer div.footer-top-container div.right-side-container div.list-container h4.list-title {
+    font-family: "ggsans-Semibold";
+    color: rgb(88, 101, 242);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+footer div.footer-top-container div.right-side-container div.list-container ul.product-list {
+    padding: 0px;
+}
+footer div.footer-top-container div.right-side-container div.list-container ul.product-list li {
+    margin-bottom: 12px;
+    list-style: none;
+}
+footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a {
+    font-family: "ggsans-Normal";
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a:hover {
+    text-decoration: underline;
+}
+footer hr.horizontal-line {
+    background-color: #5865f2;
+    width: 93%;
+    height: 1px;
+    border: none;
+}
+footer div.footer-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 87px 0px 0px;
+}
+footer div.footer-bottom-container div.left-bottom-container {
+}
+footer div.footer-bottom-container div.left-bottom-container img.logo-image {
+    width: 130px;
+}
+footer div.footer-bottom-container div.right-bottom-container {
+}
+footer div.footer-bottom-container div.right-bottom-container button.register-button {
+    background-color: rgb(88, 101, 242);
+    color: rgb(255, 255, 255);
+    padding: 10px 17px;
+    border: none;
+    font-family: "ggsans-Bold";
+    font-size: 14px;
+    border-radius: 30px;
+}
+@media all and (max-width: 1280px) {
+    header nav.middle {
+        width: 72%;
+    }
+    #services section.container {
+        padding: 120px 0px 140px 42px;
+    }
+    #services section.container div.content h3.title {
+        width: 86%;
+    }
+    #services section.container div.content p.description {
+        width: 83%;
+    }
+    #services section.middle-container {
+        padding: 115px 50px 124px 75px;
+    }
+    #services section.middle-container div.content p.description {
+        width: 88%;
+    }
+    footer {
+        padding: 75px 49px 75px 49px;
+    }
+    footer hr.horizontal-line {
+        width: 100%;
+    }
+    footer div.footer-bottom-container {
+        padding: 30px 0px 0px 0px;
+    }
+}
+@media all and (max-width: 1080px) {
+    header {
+        padding: 30px 45px 0px 45px;
+    }
+    header nav.middle {
+        display: none;
+    }
+    #spotlight {
+        height: 677px;
+        background-image: url(../images/spotlight-image2.svg);
+        background-repeat: no-repeat;
+        background-size: 600px;
+        background-position: top 371px left 99px;
+    }
+    #spotlight section.container {
+        text-align: left;
+        padding-left: 78px;
+        padding-top: 60px;
+    }
+    #spotlight section.container div.spotlight-content p.spotlight-description {
+        max-width: 794px;
+        text-align: left;
+    }
+    #spotlight section.container div.spotlight-content p.spotlight-description {
+        text-align: left;
+    }
+    #services section.container {
+        flex-wrap: wrap;
+        padding: 60px 60px 90px 78px;
+    }
+    #services section.container div.image-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+    #services section.container div.content {
+        width:100%;
+    }
+    #services section.container div.content h3.title {
+        width: 100%;
+        font-size: 33px;
+        margin-top: 20px;
+    }
+    #services section.container div.content p.description {
+        width: 99%;
+    }
+    #services section.middle-container {
+        flex-wrap: wrap;
+        padding: 60px 60px 65px 78px;
+        flex-direction: column-reverse;
+    }
+    #services section.middle-container div.content {
+        width: 100%;
+    }
+    #services section.middle-container div.image-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+    #services section.middle-container div.content h3.title {
+        font-size: 33px;
+        margin-top: 20px;
+    }
+    #services section.middle-container div.content p.description {
+        width: 99%;
+    }
+    footer {
+        padding: 75px 60px 70px 78px;
+    }
+    footer div.footer-top-container div.side-container {
+        width: 72%;
+    }
+    footer div.footer-top-container div.right-side-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container:first-child {
+        margin-right: 120px;
+        margin-bottom: 40px;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+        margin-right: 100px;
+    }
+}
+@media all and (max-width: 980px) {
+    header {
+        padding: 20px 43px;
+    }
+    #spotlight {
+        height: 750px;
+        background-position: top 445px left 4px;
+    }
+    #spotlight section.container {
+        padding-left: 48px;
+    }
+    #spotlight section.container div.spotlight-content h3.spotlight-title {
+        font-size: 51px;
+        width: 615px;
+    }
+    #spotlight section.container div.spotlight-content p.spotlight-description {
+        width: 108%;
+    }
+    #spotlight section.container div.spotlight-button-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    #spotlight section.container div.spotlight-button-container a.download-button {
+        margin-bottom: 25px;
+        padding-top: 8px;
+    }
+    #services section.container {
+        flex-wrap: wrap;
+        padding: 60px 60px 90px 48px;
+    }
+    #services section.container div.image-container {
+        width: 100%;
+    }
+    #services section.middle-container {
+        padding: 60px 60px 65px 48px;
+    }
+    #services section.middle-container div.image-container {
+        width: 100%;
+    }
+    footer {
+        padding: 60px 60px 20px 48px;
+    }
+    footer div.footer-top-container div.side-container {
+        width: 73%;
+    }
+    footer div.footer-top-container div.side-container {
+        width: 73%;
+    }
+    footer div.footer-top-container div.right-side-container {
+        width: 94%;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container:first-child {
+        margin: 0;
+        width: 57%;
+        margin-bottom: 30px;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container:nth-child(2) {
+        margin-right: 0px;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+        margin-right: 0px;
+        width: 57%;
+    }
+}
+@media all and (max-width: 768px) {
+    #spotlight {
+        height: 682px;
+        background-size: 535px;
+        background-position: top 410px left -34px;
+    }
+    #spotlight section.container {
+        padding-left: 35px;
+        padding-right: 0px;
+    }
+    #spotlight section.container div.spotlight-content {
+        width: 91%;
+    }
+    #spotlight section.container div.spotlight-content h3.spotlight-title {
+        font-size: 40px;
+        width: 100%;
+    }
+    #spotlight section.container div.spotlight-content p.spotlight-description {
+        font-size: 17px;
+        line-height: 27px;
+        width: 100%;
+    }
+    #spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+        font-size: 19px;
+    }
+    #spotlight section.container div.spotlight-button-container a.talk-button {
+        font-size: 19px;
+    }
+    #services section.container {
+        padding: 60px 35px 90px 35px;
+    }
+    #services section.container div.content h3.title {
+        width: 100%;
+        font-size: 24px;
+    }
+    #services section.container div.content p.description {
+        width: 100%;
+        font-size: 17px;
+    }
+    #services section.middle-container {
+        padding: 60px 35px 65px 35px;
+    }
+    #services section.middle-container div.content h3.title {
+        font-size: 24px;
+    }
+    #services section.middle-container div.content p.description {
+        width: 100%;
+        font-size: 17px;
+    }
+    footer div.footer-top-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer div.footer-top-container div.side-container {
+        width: 73%;
+        margin-bottom: 50px;
+    }
+
+}
+@media all and (max-width: 640px) {
+    #spotlight {
+        height: 659px;
+        background-size: 490px;
+        background-position: top 410px left -62px;
+    }
+    #spotlight section.container div.spotlight-content h3.spotlight-title {
+        font-size: 29px;
+        width: 85%;
+    }
+    #spotlight section.container div.spotlight-content p.spotlight-description {
+        font-size: 16px;
+    }
+    #spotlight section.container div.spotlight-button-container a.download-button {
+        font-size: 17px;
+        padding-top: 8px;
+    }
+    #spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+        font-size: 18px;
+    }
+    #spotlight section.container div.spotlight-button-container a.talk-button {
+        font-size: 18px;
+    }
+    #services section.container {
+        padding: 60px 25px 90px 25px;
+    }
+    #services section.container div.content h3.title {
+        line-height: 30px;
+    }
+    #services section.middle-container {
+        padding: 60px 25px 65px 25px;
+    }
+    footer {
+        padding: 60px 25px 20px 25px;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container h4.list-title {
+        font-size: 15px;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a {
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 480px) {
+    header {
+        padding: 28px 24px 0px 24px;
+    }
+    #spotlight {
+        height: 610px;
+        background-size: 400px;
+        background-position: top 407px left -71px;
+    }
+    #spotlight section.container {
+        padding-left: 18px;
+    }
+    #spotlight section.container div.spotlight-content {
+        width: 95%;
+    }
+    #spotlight section.container div.spotlight-content h3.spotlight-title {
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #spotlight section.container div.spotlight-button-container a.download-button {
+        padding: 4px 20px 12px 20px;
+    }
+    #spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+        font-size: 16px;
+    }
+    #spotlight section.container div.spotlight-button-container a.talk-button {
+        padding: 15px 17px 16px 17px;
+        font-size: 15px;
+    }
+    #services section.container {
+        padding: 60px 18px 90px 18px;
+    }
+    #services section.middle-container {
+        padding: 60px 18px 65px 18px;
+    }
+    #services section.middle-container div.content h3.title {
+       line-height: 30px;
+       width: 96%;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container h4.list-title {
+        font-size: 16px;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container:first-child {
+        width: 67%;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+        width: 68%;
+        margin-bottom: 20px;
+    }
+    footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a {
+        font-size: 16px;
+    }
+
+}
+@media all and (max-width: 360px) {
+    #spotlight {
+        background-size: 354px;
+        background-position: top 430px left -64px;
+    }
+    #spotlight section.container div.spotlight-button-container a.download-button {
+        font-size: 15px;
+        padding-top: 2px;
+    }
+    #spotlight section.container div.spotlight-button-container a.talk-button {
+        padding: 17px 13px 17px 13px;
+        font-size: 14px;
+    }
+    footer {
+        padding: 60px 18px 20px 18px;
+    }
+}
