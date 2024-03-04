@@ -2,24 +2,36 @@
     margin: 0;
 }
 @font-face {
-    font-family: "ggsans-Medium";
-    src: url("fonts/ggsans-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "ggsans-Bold";
-    src: url("../fonts/ggsans-Bold.ttf") format("truetype");
+    font-family: "ABCGintoNord-Bold";
+    src: url("../fonts/ABCGintoNord-Bold.woff2") format("woff2"),
+        url("../fonts/ABCGintoNord-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
+    font-family: "ggsans-Bold";
+    src: url("../fonts/ggsans-Bold.woff2") format("woff2"),
+        url("../fonts/ggsans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ggsans-Medium";
+    src: url("../fonts/ggsans-Medium.woff2") format("woff2"),
+        url("../fonts/ggsans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "ggsans-Normal";
-    src: url("../fonts/ggsans-Normal.ttf") format("truetype");
+    src: url("../fonts/ggsans-Normal.woff2") format("woff2"),
+        url("../fonts/ggsans-Normal.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,16 +39,9 @@
 
 @font-face {
     font-family: "ggsans-Semibold";
-    src: url("../fonts/ggsans-Semibold.ttf") format("truetype");
+    src: url("../fonts/ggsans-Semibold.woff2") format("woff2"),
+        url("../fonts/ggsans-Semibold.woff") format("woff");
     font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "ABCGintoNord-Bold";
-    src: url("../fonts/ABCGintoNord-Bold.ttf") format("truetype");
-    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -133,16 +138,33 @@ header div.right button.login-button:hover {
     color: black;
     text-decoration: none;
     margin-right: 20px;
+    cursor: pointer;
     font-family: "ggsans-Semibold";
     padding: 17px 30px 17px 32px;
     border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-#spotlight section.container div.spotlight-button-container a.download-button img.download-icon {
+#spotlight
+    section.container
+    div.spotlight-button-container
+    a.download-button:hover {
+    color: #5865f2;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+#spotlight
+    section.container
+    div.spotlight-button-container
+    a.download-button
+    img.download-icon {
     width: 25px;
     height: 28px;
     object-position: 2px 6px;
 }
-#spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+#spotlight
+    section.container
+    div.spotlight-button-container
+    a.download-button
+    span.download-text {
     margin-left: 13px;
     font-size: 20px;
 }
@@ -151,70 +173,75 @@ header div.right button.login-button:hover {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    cursor: pointer;
     font-family: "ggsans-Semibold";
     padding: 15px 30px 15px 30px;
     border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#spotlight
+    section.container
+    div.spotlight-button-container
+    a.talk-button:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 #services {
 }
 #services section.container {
+}
+#services section.container section.wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 120px 60px 140px 75px;
+    padding: 115px 180px 130px 75px;
 }
-#services section.container div.image-container {
-    width: 48%;
+#services section.container section.wrapper div.image-container {
+    width: 54%;
 }
-#services section.container div.image-container img {
+#services section.container section.wrapper div.image-container img {
     width: 100%;
     display: block;
 }
-#services section.container div.content {
-    width: 44%;
+#services section.container section.wrapper div.content {
+    width: 36%;
 }
-#services section.container div.content h3.title {
-    color: black;
-    font-size: 45px;
-    width: 68%;
+#services section.container section.wrapper div.content h3.title {
+    font-size: 48px;
     font-family: "ggsans-Bold";
-    margin-top: 49px;
-    line-height: 45px;
-    margin-bottom: 25px;
+    line-height: 48px;
+    margin-top: 60px;
+    margin-bottom: 28px;
 }
-#services section.container div.content p.description {
-    color: rgb(35, 39, 42);
+#services section.container section.wrapper div.content p.description {
     font-size: 20px;
     font-family: "ggsans-Normal";
-    width: 69%;
+    color: rgb(35, 39, 42);
 }
 #services section.middle-container {
+}
+#services section.middle-container section.wrapper {
     display: flex;
     justify-content: space-between;
     background-color: rgb(246, 246, 246);
-    padding: 115px 190px 124px 75px;
+    padding: 115px 180px 130px 75px;
 }
-#services section.middle-container div.content {
-    width: 44%;
+#services section.middle-container section.wrapper div.content {
+    width: 36%;
 }
-#services section.middle-container div.content h3.title {
-    width: 75%;
-    color: black;
-    font-size: 45px;
+#services section.middle-container section.wrapper div.content h3.title {
+    font-size: 48px;
     font-family: "ggsans-Bold";
-    margin-top: 70px;
-    line-height: 45px;
-    margin-bottom: 25px;
+    line-height: 48px;
+    margin-top: 78px;
+    margin-bottom: 28px;
 }
-#services section.middle-container div.content p.description {
-    width: 81%;
-    color: rgb(35, 39, 42);
-    font-family: "ggsans-Normal";
+#services section.middle-container section.wrapper div.content p.description {
     font-size: 20px;
+    font-family: "ggsans-Normal";
 }
-#services section.middle-container div.image-container {
-    width: 55%;
+#services section.middle-container section.wrapper div.image-container {
+    width: 54%;
 }
-#services section.middle-container div.image-container img {
+#services section.middle-container section.wrapper div.image-container img {
     width: 100%;
     display: block;
 }
@@ -236,7 +263,11 @@ footer div.footer-top-container div.side-container form.form-field {
     margin-bottom: 45px;
     margin-top: 17px;
 }
-footer div.footer-top-container div.side-container form.form-field select.select-language {
+footer
+    div.footer-top-container
+    div.side-container
+    form.form-field
+    select.select-language {
     background-color: rgb(35, 39, 42);
     border: none;
     color: white;
@@ -249,27 +280,63 @@ footer div.footer-top-container div.side-container form.form-field select.select
     background-position: left, right;
     font-family: "ggsans-Normal";
 }
-footer div.footer-top-container div.side-container form.form-field select.select-language:focus {
+footer
+    div.footer-top-container
+    div.side-container
+    form.form-field
+    select.select-language:focus {
     outline: none;
 }
-footer div.footer-top-container div.side-container form.form-field select.select-language option.select-option {
+footer
+    div.footer-top-container
+    div.side-container
+    form.form-field
+    select.select-language
+    option.select-option {
 }
 footer div.footer-top-container div.side-container div.logo-container {
 }
-footer div.footer-top-container div.side-container div.logo-container ul.logo-list {
+footer
+    div.footer-top-container
+    div.side-container
+    div.logo-container
+    ul.logo-list {
     display: flex;
     padding: 0px;
 }
-footer div.footer-top-container div.side-container div.logo-container ul.logo-list li {
+footer
+    div.footer-top-container
+    div.side-container
+    div.logo-container
+    ul.logo-list
+    li {
     list-style: none;
     margin-right: 27px;
 }
-footer div.footer-top-container div.side-container div.logo-container ul.logo-list li:last-child {
+footer
+    div.footer-top-container
+    div.side-container
+    div.logo-container
+    ul.logo-list
+    li:last-child {
     margin-right: 0px;
 }
-footer div.footer-top-container div.side-container div.logo-container ul.logo-list li a {
+footer
+    div.footer-top-container
+    div.side-container
+    div.logo-container
+    ul.logo-list
+    li
+    a {
 }
-footer div.footer-top-container div.side-container div.logo-container ul.logo-list li a img {
+footer
+    div.footer-top-container
+    div.side-container
+    div.logo-container
+    ul.logo-list
+    li
+    a
+    img {
     width: 24px;
 }
 footer div.footer-top-container div.right-side-container {
@@ -278,35 +345,69 @@ footer div.footer-top-container div.right-side-container {
 }
 footer div.footer-top-container div.right-side-container div.list-container {
 }
-footer div.footer-top-container div.right-side-container div.list-container:first-child {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container:first-child {
     margin-right: 35px;
 }
-footer div.footer-top-container div.right-side-container div.list-container:nth-child(2) {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container:nth-child(2) {
     margin-right: 110px;
 }
-footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container:nth-child(3) {
     margin-right: 15px;
 }
-footer div.footer-top-container div.right-side-container div.list-container h4.list-title {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container
+    h4.list-title {
     font-family: "ggsans-Semibold";
     color: rgb(88, 101, 242);
     margin-bottom: 25px;
     font-size: 16px;
 }
-footer div.footer-top-container div.right-side-container div.list-container ul.product-list {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container
+    ul.product-list {
     padding: 0px;
 }
-footer div.footer-top-container div.right-side-container div.list-container ul.product-list li {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container
+    ul.product-list
+    li {
     margin-bottom: 12px;
     list-style: none;
 }
-footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container
+    ul.product-list
+    li
+    a {
     font-family: "ggsans-Normal";
     font-size: 16px;
     color: white;
     text-decoration: none;
 }
-footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a:hover {
+footer
+    div.footer-top-container
+    div.right-side-container
+    div.list-container
+    ul.product-list
+    li
+    a:hover {
     text-decoration: underline;
 }
 footer hr.horizontal-line {
@@ -328,7 +429,10 @@ footer div.footer-bottom-container div.left-bottom-container img.logo-image {
 }
 footer div.footer-bottom-container div.right-bottom-container {
 }
-footer div.footer-bottom-container div.right-bottom-container button.register-button {
+footer
+    div.footer-bottom-container
+    div.right-bottom-container
+    button.register-button {
     background-color: rgb(88, 101, 242);
     color: rgb(255, 255, 255);
     padding: 10px 17px;
@@ -401,7 +505,7 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
         margin: 0 auto;
     }
     #services section.container div.content {
-        width:100%;
+        width: 100%;
     }
     #services section.container div.content h3.title {
         width: 100%;
@@ -441,11 +545,17 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
         width: 100%;
         flex-wrap: wrap;
     }
-    footer div.footer-top-container div.right-side-container div.list-container:first-child {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container:first-child {
         margin-right: 120px;
         margin-bottom: 40px;
     }
-    footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container:nth-child(3) {
         margin-right: 100px;
     }
 }
@@ -472,7 +582,10 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
         flex-wrap: wrap;
         margin-top: 30px;
     }
-    #spotlight section.container div.spotlight-button-container a.download-button {
+    #spotlight
+        section.container
+        div.spotlight-button-container
+        a.download-button {
         margin-bottom: 25px;
         padding-top: 8px;
     }
@@ -501,15 +614,24 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
     footer div.footer-top-container div.right-side-container {
         width: 94%;
     }
-    footer div.footer-top-container div.right-side-container div.list-container:first-child {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container:first-child {
         margin: 0;
         width: 57%;
         margin-bottom: 30px;
     }
-    footer div.footer-top-container div.right-side-container div.list-container:nth-child(2) {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container:nth-child(2) {
         margin-right: 0px;
     }
-    footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container:nth-child(3) {
         margin-right: 0px;
         width: 57%;
     }
@@ -536,7 +658,11 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
         line-height: 27px;
         width: 100%;
     }
-    #spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+    #spotlight
+        section.container
+        div.spotlight-button-container
+        a.download-button
+        span.download-text {
         font-size: 19px;
     }
     #spotlight section.container div.spotlight-button-container a.talk-button {
@@ -571,7 +697,6 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
         width: 73%;
         margin-bottom: 50px;
     }
-
 }
 @media all and (max-width: 640px) {
     #spotlight {
@@ -586,11 +711,18 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
     #spotlight section.container div.spotlight-content p.spotlight-description {
         font-size: 16px;
     }
-    #spotlight section.container div.spotlight-button-container a.download-button {
+    #spotlight
+        section.container
+        div.spotlight-button-container
+        a.download-button {
         font-size: 17px;
         padding-top: 8px;
     }
-    #spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+    #spotlight
+        section.container
+        div.spotlight-button-container
+        a.download-button
+        span.download-text {
         font-size: 18px;
     }
     #spotlight section.container div.spotlight-button-container a.talk-button {
@@ -608,10 +740,20 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
     footer {
         padding: 60px 25px 20px 25px;
     }
-    footer div.footer-top-container div.right-side-container div.list-container h4.list-title {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container
+        h4.list-title {
         font-size: 15px;
     }
-    footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container
+        ul.product-list
+        li
+        a {
         font-size: 16px;
     }
 }
@@ -635,10 +777,17 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
         width: 100%;
         margin-bottom: 15px;
     }
-    #spotlight section.container div.spotlight-button-container a.download-button {
+    #spotlight
+        section.container
+        div.spotlight-button-container
+        a.download-button {
         padding: 4px 20px 12px 20px;
     }
-    #spotlight section.container div.spotlight-button-container a.download-button span.download-text {
+    #spotlight
+        section.container
+        div.spotlight-button-container
+        a.download-button
+        span.download-text {
         font-size: 16px;
     }
     #spotlight section.container div.spotlight-button-container a.talk-button {
@@ -652,30 +801,48 @@ footer div.footer-bottom-container div.right-bottom-container button.register-bu
         padding: 60px 18px 65px 18px;
     }
     #services section.middle-container div.content h3.title {
-       line-height: 30px;
-       width: 96%;
+        line-height: 30px;
+        width: 96%;
     }
-    footer div.footer-top-container div.right-side-container div.list-container h4.list-title {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container
+        h4.list-title {
         font-size: 16px;
     }
-    footer div.footer-top-container div.right-side-container div.list-container:first-child {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container:first-child {
         width: 67%;
     }
-    footer div.footer-top-container div.right-side-container div.list-container:nth-child(3) {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container:nth-child(3) {
         width: 68%;
         margin-bottom: 20px;
     }
-    footer div.footer-top-container div.right-side-container div.list-container ul.product-list li a {
+    footer
+        div.footer-top-container
+        div.right-side-container
+        div.list-container
+        ul.product-list
+        li
+        a {
         font-size: 16px;
     }
-
 }
 @media all and (max-width: 360px) {
     #spotlight {
         background-size: 354px;
         background-position: top 430px left -64px;
     }
-    #spotlight section.container div.spotlight-button-container a.download-button {
+    #spotlight
+        section.container
+        div.spotlight-button-container
+        a.download-button {
         font-size: 15px;
         padding-top: 2px;
     }
