@@ -246,193 +246,126 @@ header div.right button.login-button:hover {
     display: block;
 }
 footer {
-    background-color: rgb(35, 39, 42);
-    padding: 75px 0px 75px 85px;
+    background-color: rgb(35, 39, 42);    
 }
-footer div.footer-top-container {
+footer section.wrapper {
+    padding: 80px 75px 60px 75px;
+
+}
+footer section.wrapper section.footer-top-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #5865f2;
+
 }
-footer div.footer-top-container {
+footer section.wrapper section.footer-top-container div.side-container {
+    width: 30%;
+
 }
-footer div.footer-top-container div.side-container {
-    width: 26%;
+footer section.wrapper section.footer-top-container div.side-container form.language-field {
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
-footer div.footer-top-container div.side-container form.form-field {
-    margin-bottom: 45px;
-    margin-top: 17px;
-}
-footer
-    div.footer-top-container
-    div.side-container
-    form.form-field
-    select.select-language {
+footer section.wrapper section.footer-top-container div.side-container form.language-field select.select-language {
     background-color: rgb(35, 39, 42);
     border: none;
     color: white;
     appearance: none;
     padding: 10px 30px;
-    background-image: url(../images/flag.svg), url(../images/down-arrow.svg);
+    background-image: url(../images/flag.svg),url(../images/down-arrow.svg);
     background-repeat: no-repeat no-repeat;
     background-size: 22px 19px;
     font-size: 14px;
-    background-position: left, right;
+    background-position: left,right;
     font-family: "ggsans-Normal";
+
 }
-footer
-    div.footer-top-container
-    div.side-container
-    form.form-field
-    select.select-language:focus {
+footer section.wrapper section.footer-top-container div.side-container form.language-field select.select-language:focus {
     outline: none;
 }
-footer
-    div.footer-top-container
-    div.side-container
-    form.form-field
-    select.select-language
-    option.select-option {
+footer section.wrapper section.footer-top-container div.side-container form.language-field select.select-language option.select-option {
+
 }
-footer div.footer-top-container div.side-container div.logo-container {
+footer section.wrapper section.footer-top-container div.side-container div.social-icon {
+    
+
 }
-footer
-    div.footer-top-container
-    div.side-container
-    div.logo-container
-    ul.logo-list {
+footer section.wrapper section.footer-top-container div.side-container div.social-icon ul {
     display: flex;
-    padding: 0px;
+    padding: 0;
+
 }
-footer
-    div.footer-top-container
-    div.side-container
-    div.logo-container
-    ul.logo-list
-    li {
+footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li {
     list-style: none;
     margin-right: 27px;
+
 }
-footer
-    div.footer-top-container
-    div.side-container
-    div.logo-container
-    ul.logo-list
-    li:last-child {
+footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li:last-child {
     margin-right: 0px;
 }
-footer
-    div.footer-top-container
-    div.side-container
-    div.logo-container
-    ul.logo-list
-    li
-    a {
+footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li a {
+
 }
-footer
-    div.footer-top-container
-    div.side-container
-    div.logo-container
-    ul.logo-list
-    li
-    a
-    img {
-    width: 24px;
+footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li a img {
+    width: 100%;
+    display: block;
+
 }
-footer div.footer-top-container div.right-side-container {
+footer section.wrapper section.footer-top-container div.right-container {
     display: flex;
-    width: 66%;
+    width: 65%;
+
 }
-footer div.footer-top-container div.right-side-container div.list-container {
+footer section.wrapper section.footer-top-container div.right-container div.list-item {
+    width: 25%;
+
 }
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container:first-child {
-    margin-right: 35px;
-}
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container:nth-child(2) {
-    margin-right: 110px;
-}
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container:nth-child(3) {
-    margin-right: 15px;
-}
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container
-    h4.list-title {
-    font-family: "ggsans-Semibold";
+footer section.wrapper section.footer-top-container div.right-container div.list-item h4 {
     color: rgb(88, 101, 242);
-    margin-bottom: 25px;
-    font-size: 16px;
-}
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container
-    ul.product-list {
-    padding: 0px;
-}
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container
-    ul.product-list
-    li {
-    margin-bottom: 12px;
-    list-style: none;
-}
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container
-    ul.product-list
-    li
-    a {
     font-family: "ggsans-Normal";
     font-size: 16px;
-    color: white;
+    margin-bottom: 25px;
+
+}
+footer section.wrapper section.footer-top-container div.right-container div.list-item ul {
+    padding: 0;
+
+}
+footer section.wrapper section.footer-top-container div.right-container div.list-item ul li {
+    list-style: none;
+    margin-bottom: 15px;
+
+}
+footer section.wrapper section.footer-top-container div.right-container div.list-item ul li a {
+    font-style: 18px;
     text-decoration: none;
+    font-family: "ggsans-Normal";
+    color: white;
 }
-footer
-    div.footer-top-container
-    div.right-side-container
-    div.list-container
-    ul.product-list
-    li
-    a:hover {
-    text-decoration: underline;
+footer section.wrapper div.horizontal-line {
+    border-bottom: 1px solid #5865f2;
 }
-footer hr.horizontal-line {
-    background-color: #5865f2;
-    width: 93%;
-    height: 1px;
-    border: none;
-}
-footer div.footer-bottom-container {
+footer section.wrapper div.footer-bottom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 87px 0px 0px;
+    margin-top: 30px;
+
 }
-footer div.footer-bottom-container div.left-bottom-container {
-}
-footer div.footer-bottom-container div.left-bottom-container img.logo-image {
+footer section.wrapper div.footer-bottom-container div.left-bottom-container {
     width: 130px;
+
 }
-footer div.footer-bottom-container div.right-bottom-container {
+footer section.wrapper div.footer-bottom-container div.left-bottom-container img.logo-image {
+    width: 100%;
+    display: block;
+
 }
-footer
-    div.footer-bottom-container
-    div.right-bottom-container
-    button.register-button {
+footer section.wrapper div.footer-bottom-container div.right-bottom-container {
+
+}
+footer section.wrapper div.footer-bottom-container div.right-bottom-container button.signup-button{
     background-color: rgb(88, 101, 242);
     color: rgb(255, 255, 255);
     padding: 10px 17px;
@@ -440,6 +373,7 @@ footer
     font-family: "ggsans-Bold";
     font-size: 14px;
     border-radius: 30px;
+
 }
 @media all and (max-width: 1280px) {
     header nav.middle {
