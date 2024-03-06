@@ -101,89 +101,65 @@ header div.right button.login-button:hover {
 }
 #spotlight {
     background-color: rgb(58, 58, 255);
-    height: 553px;
-    background-image: url(../images/spotlight-image2.svg),
-        url(../images/spotlight-image1.svg);
-    background-repeat: no-repeat no-repeat;
-    background-size: 707px, 600px;
-    background-position: top 193px left -340px, top 202px right -218px;
+    height: 555px;
+    background-image: url(../images/spotlight-image2.svg),url(../images/spotlight-image1.svg),url(../images/spotlight-image3.svg);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size: 52%,45%,auto;
+    background-position: -52% 100%,130% 100%,50% 100%;
     text-align: center;
 }
-#spotlight section.container {
-    padding: 105px 120px 0px 127px;
+#spotlight section.wrapper {
+    padding: 108px 280px 0px 280px; 
 }
-#spotlight section.container div.spotlight-content {
+#spotlight section.wrapper div.spotlight-top-container {
 }
-#spotlight section.container div.spotlight-content h3.spotlight-title {
+#spotlight section.wrapper div.spotlight-top-container h3.spotlight-title {
     font-size: 58px;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: "ABCGintoNord-Bold";
-    margin-bottom: 26px;
+    margin-bottom: 28px;
 }
-#spotlight section.container div.spotlight-content p.spotlight-description {
-    max-width: 780px;
+#spotlight section.wrapper div.spotlight-top-container p.spotlight-description {
     font-size: 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    line-height: 32px;
+    color: white;
     font-family: "ggsans-Normal";
-    margin-bottom: 40px;
-    margin: 0 auto;
+    line-height: 34px;
+    margin-bottom: 20px;
 }
-#spotlight section.container div.spotlight-button-container {
-    margin-top: 45px;
+#spotlight section.wrapper div.button-container {
+    display: flex;
+    justify-content: center;
 }
-#spotlight section.container div.spotlight-button-container a.download-button {
+#spotlight section.wrapper div.button-container button.download-button {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: "ggsans-Semibold";
     background-color: white;
     color: black;
-    text-decoration: none;
-    margin-right: 20px;
     cursor: pointer;
-    font-family: "ggsans-Semibold";
-    padding: 17px 30px 17px 32px;
+}
+#spotlight section.wrapper div.button-container button.download-button span.image-container {
+    width: 28px;
+    margin-right: 8px;
+}
+#spotlight section.wrapper div.button-container button.download-button span.image-container img.download-icon {
+    width: 100%;
+    display: block;
+}
+#spotlight section.wrapper div.button-container button.explore-button {
+    padding: 15px 30px;
+    border: none;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-#spotlight
-    section.container
-    div.spotlight-button-container
-    a.download-button:hover {
-    color: #5865f2;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-}
-#spotlight
-    section.container
-    div.spotlight-button-container
-    a.download-button
-    img.download-icon {
-    width: 25px;
-    height: 28px;
-    object-position: 2px 6px;
-}
-#spotlight
-    section.container
-    div.spotlight-button-container
-    a.download-button
-    span.download-text {
-    margin-left: 13px;
     font-size: 20px;
-}
-#spotlight section.container div.spotlight-button-container a.talk-button {
-    background-color: rgb(35, 39, 42);
+    font-family: "ggsans-Semibold";
+    background-color: black;
     color: white;
-    text-decoration: none;
-    font-size: 20px;
     cursor: pointer;
-    font-family: "ggsans-Semibold";
-    padding: 15px 30px 15px 30px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-#spotlight
-    section.container
-    div.spotlight-button-container
-    a.talk-button:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 #services {
 }
@@ -250,18 +226,15 @@ footer {
 }
 footer section.wrapper {
     padding: 80px 75px 60px 75px;
-
 }
 footer section.wrapper section.footer-top-container {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
     border-bottom: 1px solid #5865f2;
-
 }
 footer section.wrapper section.footer-top-container div.side-container {
     width: 30%;
-
 }
 footer section.wrapper section.footer-top-container div.side-container form.language-field {
     margin-top: 20px;
@@ -279,63 +252,50 @@ footer section.wrapper section.footer-top-container div.side-container form.lang
     font-size: 14px;
     background-position: left,right;
     font-family: "ggsans-Normal";
-
 }
 footer section.wrapper section.footer-top-container div.side-container form.language-field select.select-language:focus {
     outline: none;
 }
 footer section.wrapper section.footer-top-container div.side-container form.language-field select.select-language option.select-option {
-
 }
 footer section.wrapper section.footer-top-container div.side-container div.social-icon {
-    
-
 }
 footer section.wrapper section.footer-top-container div.side-container div.social-icon ul {
     display: flex;
     padding: 0;
-
 }
 footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li {
     list-style: none;
     margin-right: 27px;
-
 }
 footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li:last-child {
     margin-right: 0px;
 }
 footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li a {
-
 }
 footer section.wrapper section.footer-top-container div.side-container div.social-icon ul li a img {
     width: 100%;
     display: block;
-
 }
 footer section.wrapper section.footer-top-container div.right-container {
     display: flex;
     width: 65%;
-
 }
 footer section.wrapper section.footer-top-container div.right-container div.list-item {
     width: 25%;
-
 }
 footer section.wrapper section.footer-top-container div.right-container div.list-item h4 {
     color: rgb(88, 101, 242);
     font-family: "ggsans-Normal";
     font-size: 16px;
     margin-bottom: 25px;
-
 }
 footer section.wrapper section.footer-top-container div.right-container div.list-item ul {
     padding: 0;
-
 }
 footer section.wrapper section.footer-top-container div.right-container div.list-item ul li {
     list-style: none;
     margin-bottom: 15px;
-
 }
 footer section.wrapper section.footer-top-container div.right-container div.list-item ul li a {
     font-style: 18px;
@@ -351,19 +311,15 @@ footer section.wrapper div.footer-bottom-container {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-
 }
 footer section.wrapper div.footer-bottom-container div.left-bottom-container {
     width: 130px;
-
 }
 footer section.wrapper div.footer-bottom-container div.left-bottom-container img.logo-image {
     width: 100%;
     display: block;
-
 }
 footer section.wrapper div.footer-bottom-container div.right-bottom-container {
-
 }
 footer section.wrapper div.footer-bottom-container div.right-bottom-container button.signup-button{
     background-color: rgb(88, 101, 242);
@@ -373,9 +329,8 @@ footer section.wrapper div.footer-bottom-container div.right-bottom-container bu
     font-family: "ggsans-Bold";
     font-size: 14px;
     border-radius: 30px;
-
 }
-@media all and (max-width: 1280px) {
+/* @media all and (max-width: 1280px) {
     header nav.middle {
         width: 72%;
     }
@@ -787,4 +742,4 @@ footer section.wrapper div.footer-bottom-container div.right-bottom-container bu
     footer {
         padding: 60px 18px 20px 18px;
     }
-}
+} */
