@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="primary-header">
         <div class="left">
             <a href="#">
                 <img src="images/logo.svg" alt="Logo" class="logo-image">
             </a>
         </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
         <nav class="middle">
-            <ul>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Nitro</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Safety</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
+            <ul class="primary-navigation" id="primary-navigation" data-visible="false">
+                <li><a href="#" aria-hidden="true">Download</a></li>
+                <li><a href="#" aria-hidden="true">Nitro</a></li>
+                <li><a href="#" aria-hidden="true">Discover</a></li>
+                <li><a href="#" aria-hidden="true">Safety</a></li>
+                <li><a href="#" aria-hidden="true">Support</a></li>
+                <li><a href="#" aria-hidden="true">Blog</a></li>
+                <li><a href="#" aria-hidden="true">Careers</a></li>
             </ul>
         </nav>
         <div class="right">
@@ -174,5 +175,22 @@
             </div>
         </section> 
     </footer>
+    <script>
+        const primaryNav = document.querySelector(".primary-navigation");
+        const navToggle = document.querySelector(".mobile-nav-toggle");
+
+        navToggle.addEventListener("click", () => {
+            const visibility = primaryNav.getAttribute("data-visible");
+
+            if (visibility === "false") {
+                primaryNav.setAttribute("data-visible", true);
+                navToggle.setAttribute("aria-expanded",true);
+            } else if (visibility === "true") {
+                primaryNav.setAttribute("data-visible", false);
+                navToggle.setAttribute("aria-expanded",false);
+            }
+
+        });
+    </script>
 </body>
 </html>

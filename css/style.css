@@ -1,6 +1,9 @@
 * {
     margin: 0;
 }
+body {
+    overflow-x: hidden;
+}
 @font-face {
     font-family: "ABCGintoNord-Bold";
     src: url("../fonts/ABCGintoNord-Bold.woff2") format("woff2"),
@@ -46,46 +49,50 @@
     font-display: swap;
 }
 
-header {
+header.primary-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
     background-color: rgb(58, 58, 255);
 }
-header div.left {
+header.primary-header div.left {
     width: 12%;
 }
-header div.left a {
+header.primary-header div.left a {
 }
-header div.left a img.logo-image {
+header.primary-header div.left a img.logo-image {
     width: 130px;
 }
-header nav.middle {
+header.primary-header button.mobile-nav-toggle {
+    display: none;
+
+}
+header.primary-header nav.middle {
     width: 62%;
 }
-header nav.middle ul {
+header.primary-header nav.middle ul.primary-navigation {
     display: flex;
 }
-header nav.middle ul li {
+header.primary-header nav.middle ul.primary-navigation li {
     list-style: none;
     margin-right: 35px;
 }
-header nav.middle ul li:last-child {
+header.primary-header nav.middle ul.primary-navigation li:last-child {
     margin-right: 0;
 }
-header nav.middle ul li a {
+header.primary-header nav.middle ul.primary-navigation li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: "ggsans-Semibold";
     font-size: 17px;
 }
-header nav.middle ul li a:hover {
+header.primary-header nav.middle ul.primary-navigation li a:hover {
     text-decoration: underline;
 }
-header div.right {
+header.primary-header div.right {
 }
-header div.right button.login-button {
+header.primary-header div.right button.login-button {
     background-color: white;
     color: black;
     padding: 10px 16px;
@@ -96,7 +103,7 @@ header div.right button.login-button {
     border-radius: 20px;
     cursor: pointer;
 }
-header div.right button.login-button:hover {
+header.primary-header div.right button.login-button:hover {
     color: rgb(88, 101, 242);
 }
 #spotlight {
@@ -230,8 +237,8 @@ footer section.wrapper {
 footer section.wrapper section.footer-top-container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 15px;
     border-bottom: 1px solid #5865f2;
+    padding-bottom: 17px;
 }
 footer section.wrapper section.footer-top-container div.side-container {
     width: 30%;
@@ -310,7 +317,7 @@ footer section.wrapper div.footer-bottom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 footer section.wrapper div.footer-bottom-container div.left-bottom-container {
     width: 130px;
@@ -330,416 +337,224 @@ footer section.wrapper div.footer-bottom-container div.right-bottom-container bu
     font-size: 14px;
     border-radius: 30px;
 }
-/* @media all and (max-width: 1280px) {
-    header nav.middle {
+@media all and (max-width: 1280px) {
+    header.primary-header {
+        padding: 20px 48px;
+    }
+    header.primary-header div.left {
+        width: 15%;
+    }
+    header.primary-header nav.middle {
         width: 72%;
     }
-    #services section.container {
-        padding: 120px 0px 140px 42px;
+    #spotlight section.wrapper {
+        padding: 108px 130px 0px 130px;
     }
-    #services section.container div.content h3.title {
-        width: 86%;
+    #services section.container section.wrapper {
+        padding: 115px 100px 130px 58px;
     }
-    #services section.container div.content p.description {
-        width: 83%;
+    #services section.container section.wrapper div.image-container {
+        width: 57%;
     }
-    #services section.middle-container {
-        padding: 115px 50px 124px 75px;
+    #services section.container section.wrapper div.content {
+        width: 35%;
     }
-    #services section.middle-container div.content p.description {
-        width: 88%;
+    #services section.container section.wrapper div.content h3.title {
+        margin-top: 0px;
     }
-    footer {
-        padding: 75px 49px 75px 49px;
+    #services section.middle-container section.wrapper {
+        padding: 115px 100px 130px 58px;
     }
-    footer hr.horizontal-line {
-        width: 100%;
+    #services section.middle-container section.wrapper div.content {
+        width: 35%;
     }
-    footer div.footer-bottom-container {
-        padding: 30px 0px 0px 0px;
+    #services section.middle-container section.wrapper div.image-container {
+        width: 57%;
+    }
+    #services section.middle-container section.wrapper div.content h3.title {
+        margin-top: 0px;
+    }
+    footer section.wrapper {
+        padding: 80px 58px 60px 58px;
     }
 }
 @media all and (max-width: 1080px) {
-    header {
-        padding: 30px 45px 0px 45px;
+    header.primary-header {
+        padding: 30px 48px 20px 48px;
     }
-    header nav.middle {
-        display: none;
-    }
-    #spotlight {
-        height: 677px;
-        background-image: url(../images/spotlight-image2.svg);
-        background-repeat: no-repeat;
-        background-size: 600px;
-        background-position: top 371px left 99px;
-    }
-    #spotlight section.container {
-        text-align: left;
-        padding-left: 78px;
-        padding-top: 60px;
-    }
-    #spotlight section.container div.spotlight-content p.spotlight-description {
-        max-width: 794px;
-        text-align: left;
-    }
-    #spotlight section.container div.spotlight-content p.spotlight-description {
-        text-align: left;
-    }
-    #services section.container {
-        flex-wrap: wrap;
-        padding: 60px 60px 90px 78px;
-    }
-    #services section.container div.image-container {
+    header.primary-header nav.middle {
         width: 75%;
-        margin: 0 auto;
     }
-    #services section.container div.content {
-        width: 100%;
+    #spotlight section.wrapper {
+        padding: 108px 100px 0px 100px;
     }
-    #services section.container div.content h3.title {
-        width: 100%;
-        font-size: 33px;
-        margin-top: 20px;
+    #services section.container section.wrapper {
+        padding: 115px 43px 130px 35px;
     }
-    #services section.container div.content p.description {
-        width: 99%;
+    #services section.container section.wrapper div.image-container {
+        width: 55%;
     }
-    #services section.middle-container {
-        flex-wrap: wrap;
-        padding: 60px 60px 65px 78px;
-        flex-direction: column-reverse;
+    #services section.container section.wrapper div.content {
+        width: 40%;
     }
-    #services section.middle-container div.content {
-        width: 100%;
+    #services section.middle-container section.wrapper {
+        padding: 115px 43px 130px 35px;
     }
-    #services section.middle-container div.image-container {
-        width: 75%;
-        margin: 0 auto;
+    #services section.middle-container section.wrapper div.content {
+        width: 40%;
     }
-    #services section.middle-container div.content h3.title {
-        font-size: 33px;
-        margin-top: 20px;
+    #services section.middle-container section.wrapper div.image-container {
+        width: 55%;
     }
-    #services section.middle-container div.content p.description {
-        width: 99%;
+    footer section.wrapper {
+        padding: 80px 43px 60px 35px;
     }
-    footer {
-        padding: 75px 60px 70px 78px;
-    }
-    footer div.footer-top-container div.side-container {
-        width: 72%;
-    }
-    footer div.footer-top-container div.right-side-container {
+    footer section.wrapper section.footer-top-container div.right-container {
         display: flex;
-        width: 100%;
+        width: 58%;
         flex-wrap: wrap;
     }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container:first-child {
-        margin-right: 120px;
-        margin-bottom: 40px;
+    footer section.wrapper section.footer-top-container div.right-container div.list-item {
+        width: 50%;
     }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container:nth-child(3) {
-        margin-right: 100px;
+    footer section.wrapper section.footer-top-container div.right-container div.list-item:first-child {
+        margin-bottom: 30px;
     }
 }
 @media all and (max-width: 980px) {
-    header {
-        padding: 20px 43px;
+    header.primary-header {
+        padding: 30px 90px 20px 38px;
     }
-    #spotlight {
-        height: 750px;
-        background-position: top 445px left 4px;
+    header.primary-header button.mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        background-image: url(../images/hamburgermenu.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        width: 32px;
+        height: 32px;
+        border: 0;
+        z-index: 3;
+        top: 30px;
+        right: 30px;
+    
     }
-    #spotlight section.container {
-        padding-left: 48px;
+    header.primary-header button.mobile-nav-toggle[aria-expanded=true] {
+        background-image: url(../images/close-icon.svg);
+        position: fixed;
+
     }
-    #spotlight section.container div.spotlight-content h3.spotlight-title {
-        font-size: 51px;
-        width: 615px;
+    header.primary-header nav.middle ul.primary-navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 48%;
+        background: white;
+        flex-direction: column;
+        padding: 100px 50px 0px 50px;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
     }
-    #spotlight section.container div.spotlight-content p.spotlight-description {
-        width: 108%;
+    header.primary-header nav.middle ul.primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+
     }
-    #spotlight section.container div.spotlight-button-container {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 30px;
-    }
-    #spotlight
-        section.container
-        div.spotlight-button-container
-        a.download-button {
-        margin-bottom: 25px;
-        padding-top: 8px;
-    }
-    #services section.container {
-        flex-wrap: wrap;
-        padding: 60px 60px 90px 48px;
-    }
-    #services section.container div.image-container {
-        width: 100%;
-    }
-    #services section.middle-container {
-        padding: 60px 60px 65px 48px;
-    }
-    #services section.middle-container div.image-container {
-        width: 100%;
-    }
-    footer {
-        padding: 60px 60px 20px 48px;
-    }
-    footer div.footer-top-container div.side-container {
-        width: 73%;
-    }
-    footer div.footer-top-container div.side-container {
-        width: 73%;
-    }
-    footer div.footer-top-container div.right-side-container {
-        width: 94%;
-    }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container:first-child {
-        margin: 0;
-        width: 57%;
+    header.primary-header nav.middle ul.primary-navigation li {
         margin-bottom: 30px;
     }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container:nth-child(2) {
-        margin-right: 0px;
+    header.primary-header nav.middle ul.primary-navigation li a {
+        color: black;
     }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container:nth-child(3) {
-        margin-right: 0px;
-        width: 57%;
+    #spotlight {
+        height: 757px;
+        background-image: url(../images/spotlight-image2.svg);
+        background-repeat: no-repeat;
+        background-size: 82%;
+        background-position: 11% 100%;
+    }
+    #spotlight section.wrapper {
+        padding: 60px 40px 0px 40px;
+        text-align: left;
+    }
+    #spotlight section.wrapper div.button-container {
+        display: block;
+    }
+    #spotlight section.wrapper div.button-container button.download-button {
+        margin-bottom: 20px;
+    }
+    #services section.container section.wrapper {
+        padding: 115px 40px 130px 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #services section.container section.wrapper div.image-container {
+        width: 100%;
+    }
+    #services section.container section.wrapper div.content {
+        width: 100%;
+    }
+    #services section.container section.wrapper div.content h3.title {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    #services section.middle-container section.wrapper {
+        padding: 115px 40px 130px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    #services section.middle-container section.wrapper div.content {
+        width: 100%;
+    }
+    #services section.middle-container section.wrapper div.content h3.title {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    #services section.middle-container section.wrapper div.image-container {
+        width: 100%;
     }
 }
 @media all and (max-width: 768px) {
-    #spotlight {
-        height: 682px;
-        background-size: 535px;
-        background-position: top 410px left -34px;
+    #spotlight section.wrapper div.spotlight-top-container h3.spotlight-title {
+        font-size: 47px;
     }
-    #spotlight section.container {
-        padding-left: 35px;
-        padding-right: 0px;
+    #spotlight section.wrapper div.spotlight-top-container p.spotlight-description {
+        font-size: 18px;
     }
-    #spotlight section.container div.spotlight-content {
-        width: 91%;
-    }
-    #spotlight section.container div.spotlight-content h3.spotlight-title {
-        font-size: 40px;
-        width: 100%;
-    }
-    #spotlight section.container div.spotlight-content p.spotlight-description {
-        font-size: 17px;
-        line-height: 27px;
-        width: 100%;
-    }
-    #spotlight
-        section.container
-        div.spotlight-button-container
-        a.download-button
-        span.download-text {
+    #spotlight section.wrapper div.button-container button.download-button {
         font-size: 19px;
     }
-    #spotlight section.container div.spotlight-button-container a.talk-button {
+    #spotlight section.wrapper div.button-container button.explore-button {
         font-size: 19px;
     }
-    #services section.container {
-        padding: 60px 35px 90px 35px;
+    #services section.container section.wrapper div.content h3.title {
+        font-size: 28px;
     }
-    #services section.container div.content h3.title {
+    #services section.container section.wrapper div.content p.description {
+        font-size: 19px;
+    }
+    #services section.middle-container section.wrapper div.content h3.title {
+        font-size: 28px;
+    }
+    #services section.middle-container section.wrapper div.content p.description {
+        font-size: 19px;
+    }
+    footer section.wrapper {
+        padding: 80px 40px 40px 40px;
+    }
+    footer section.wrapper section.footer-top-container {
+        display: block;
+    }
+    footer section.wrapper section.footer-top-container div.side-container {
         width: 100%;
-        font-size: 24px;
+        margin-bottom: 54px;
     }
-    #services section.container div.content p.description {
-        width: 100%;
-        font-size: 17px;
-    }
-    #services section.middle-container {
-        padding: 60px 35px 65px 35px;
-    }
-    #services section.middle-container div.content h3.title {
-        font-size: 24px;
-    }
-    #services section.middle-container div.content p.description {
-        width: 100%;
-        font-size: 17px;
-    }
-    footer div.footer-top-container {
+    footer section.wrapper section.footer-top-container div.right-container {
+        display: flex;
         width: 100%;
         flex-wrap: wrap;
     }
-    footer div.footer-top-container div.side-container {
-        width: 73%;
-        margin-bottom: 50px;
-    }
 }
-@media all and (max-width: 640px) {
-    #spotlight {
-        height: 659px;
-        background-size: 490px;
-        background-position: top 410px left -62px;
-    }
-    #spotlight section.container div.spotlight-content h3.spotlight-title {
-        font-size: 29px;
-        width: 85%;
-    }
-    #spotlight section.container div.spotlight-content p.spotlight-description {
-        font-size: 16px;
-    }
-    #spotlight
-        section.container
-        div.spotlight-button-container
-        a.download-button {
-        font-size: 17px;
-        padding-top: 8px;
-    }
-    #spotlight
-        section.container
-        div.spotlight-button-container
-        a.download-button
-        span.download-text {
-        font-size: 18px;
-    }
-    #spotlight section.container div.spotlight-button-container a.talk-button {
-        font-size: 18px;
-    }
-    #services section.container {
-        padding: 60px 25px 90px 25px;
-    }
-    #services section.container div.content h3.title {
-        line-height: 30px;
-    }
-    #services section.middle-container {
-        padding: 60px 25px 65px 25px;
-    }
-    footer {
-        padding: 60px 25px 20px 25px;
-    }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container
-        h4.list-title {
-        font-size: 15px;
-    }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container
-        ul.product-list
-        li
-        a {
-        font-size: 16px;
-    }
-}
-@media all and (max-width: 480px) {
-    header {
-        padding: 28px 24px 0px 24px;
-    }
-    #spotlight {
-        height: 610px;
-        background-size: 400px;
-        background-position: top 407px left -71px;
-    }
-    #spotlight section.container {
-        padding-left: 18px;
-    }
-    #spotlight section.container div.spotlight-content {
-        width: 95%;
-    }
-    #spotlight section.container div.spotlight-content h3.spotlight-title {
-        font-size: 24px;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    #spotlight
-        section.container
-        div.spotlight-button-container
-        a.download-button {
-        padding: 4px 20px 12px 20px;
-    }
-    #spotlight
-        section.container
-        div.spotlight-button-container
-        a.download-button
-        span.download-text {
-        font-size: 16px;
-    }
-    #spotlight section.container div.spotlight-button-container a.talk-button {
-        padding: 15px 17px 16px 17px;
-        font-size: 15px;
-    }
-    #services section.container {
-        padding: 60px 18px 90px 18px;
-    }
-    #services section.middle-container {
-        padding: 60px 18px 65px 18px;
-    }
-    #services section.middle-container div.content h3.title {
-        line-height: 30px;
-        width: 96%;
-    }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container
-        h4.list-title {
-        font-size: 16px;
-    }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container:first-child {
-        width: 67%;
-    }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container:nth-child(3) {
-        width: 68%;
-        margin-bottom: 20px;
-    }
-    footer
-        div.footer-top-container
-        div.right-side-container
-        div.list-container
-        ul.product-list
-        li
-        a {
-        font-size: 16px;
-    }
-}
-@media all and (max-width: 360px) {
-    #spotlight {
-        background-size: 354px;
-        background-position: top 430px left -64px;
-    }
-    #spotlight
-        section.container
-        div.spotlight-button-container
-        a.download-button {
-        font-size: 15px;
-        padding-top: 2px;
-    }
-    #spotlight section.container div.spotlight-button-container a.talk-button {
-        padding: 17px 13px 17px 13px;
-        font-size: 14px;
-    }
-    footer {
-        padding: 60px 18px 20px 18px;
-    }
-} */
