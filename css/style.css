@@ -558,3 +558,38 @@ footer section.wrapper div.footer-bottom-container div.right-bottom-container bu
         flex-wrap: wrap;
     }
 }
+@media all and (max-width: 640px) {
+    #spotlight section.wrapper div.spotlight-top-container h3.spotlight-title {
+        font-size: 34px;
+    }
+    #spotlight section.wrapper div.spotlight-top-container p.spotlight-description {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    #spotlight section.wrapper div.button-container button.download-button {
+        font-size: 17px;
+    }
+    #spotlight section.wrapper div.button-container button.explore-button {
+        font-size: 17px;
+    }
+    #spotlight {
+        height: 640px;
+        background-image: url(../images/spotlight-image2.svg);
+        background-repeat: no-repeat;
+        background-size: 94%;
+        background-position: -114% 100%;
+    }
+    #services section.container section.wrapper div.content h3.title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    #services section.middle-container section.wrapper div.content h3.title {
+        font-size: 26px;
+    }
+    #services section.container section.wrapper div.content p.description {
+        font-size: 17px;
+    }
+    #services section.middle-container section.wrapper div.content p.description {
+        font-size: 17px;
+    }
+}
